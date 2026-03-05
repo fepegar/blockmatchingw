@@ -221,9 +221,7 @@ def blockmatching(
     if initial_result_transformation is not None:
         lines.append(f"-init-res-trsf {initial_result_transformation} \\")
     if initial_result_voxel_transformation is not None:
-        lines.append(
-            f"-init-res-voxel-trsf {initial_result_voxel_transformation} \\"
-        )
+        lines.append(f"-init-res-voxel-trsf {initial_result_voxel_transformation} \\")
     if default_transformation is not None:
         lines.append(f"-default-trsf {default_transformation} \\")
     if normalisation is True:

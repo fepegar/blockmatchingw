@@ -8,7 +8,11 @@ from loguru import logger
 
 from blockmatchingw.commands import setup_logger
 from blockmatchingw.enums import LogLevel
-from blockmatchingw.install import _DEFAULT_OUTPUT_DIR, download_blockmatching, get_platform
+from blockmatchingw.install import (
+    _DEFAULT_OUTPUT_DIR,
+    download_blockmatching,
+    get_platform,
+)
 
 
 def install(

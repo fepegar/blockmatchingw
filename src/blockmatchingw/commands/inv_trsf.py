@@ -36,9 +36,7 @@ def inv_trsf(
     ] = None,
     inversion_iteration: Annotated[
         Optional[int],
-        typer.Option(
-            "--inversion-iteration", help="Max iterations for convergence."
-        ),
+        typer.Option("--inversion-iteration", help="Max iterations for convergence."),
     ] = None,
     verbose: Annotated[
         bool, typer.Option("--verbose", "-v", help="Enable verbose output.")

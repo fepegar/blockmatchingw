@@ -171,9 +171,7 @@ class TestBlockmatching:
         ref = temp_dir / "ref.nii"
         flo = temp_dir / "flo.nii"
         with patch("blockmatchingw.wrapper._run_with_logging") as mock_run:
-            blockmatching(
-                ref, flo, pyramid_lowest_level=1, pyramid_highest_level=5
-            )
+            blockmatching(ref, flo, pyramid_lowest_level=1, pyramid_highest_level=5)
             args = mock_run.call_args[0]
             lines = " ".join(args[1:])
             assert "-py-ll 1" in lines
