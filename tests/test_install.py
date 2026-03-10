@@ -46,7 +46,9 @@ class TestGetDownloadUrl:
             url = _get_download_url()
             assert "linux-x86_64" in url
             assert "github.com" in url
+            assert "/releases/latest/download/" in url
             assert ".tar.gz" in url
+            assert "v0.1.0" not in url
 
 
 class TestFind:

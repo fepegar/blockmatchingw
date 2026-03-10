@@ -29,7 +29,7 @@
 blockmatchingw install
 ```
 
-This downloads the correct pre-built BlockMatching binaries for your platform
+This downloads the latest pre-built BlockMatching binaries for your platform
 and places them in `~/.local/bin` by default.
 
 To install to a custom directory:

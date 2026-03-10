@@ -9,7 +9,7 @@ from pathlib import Path
 import requests
 from loguru import logger
 
-_GITHUB_URL = "https://github.com/fepegar/Klab-BlockMatching/releases/download/v0.1.0/klab-blockmatching-{platform}.tar.gz"
+_GITHUB_URL = "https://github.com/fepegar/Klab-BlockMatching/releases/latest/download/klab-blockmatching-{platform}.tar.gz"
 
 BINARIES = (
     "applyTrsf",
